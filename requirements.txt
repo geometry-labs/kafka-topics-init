@@ -1,2 +1,5 @@
-kafka-python
 pydantic
+requests
+confluent_kafka
+avro-python3
+fastavro

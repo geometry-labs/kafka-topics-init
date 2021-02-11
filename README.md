@@ -27,6 +27,20 @@ docker run \
   icon-kafka-topics-init:latest
 ```
 
+## Docker Compose set up
+```
+  kafka-topic-init:
+    image: pranavt61/kafka-topic-init:latest
+    depends_on:
+      - kafka
+    environment:
+      KAFKA_URL: kafka:9092
+      KAFKA_SCHEMA_REGISTRY_URL: schemaregistry:8081
+    volumes:
+      - ./kafka-topic-init/:/topics/
+    restart: on-failure
+```
+
 ## Enviroment Variables
 
 | Name | Description | Default | Required |

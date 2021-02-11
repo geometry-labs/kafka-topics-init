@@ -3,6 +3,8 @@
 Init container to be used with [icon-api]() stack. 
 Use this contianer to set up kafka topics.
 
+Docker Hub: [image](https://hub.docker.com/r/pranavt61/kafka-topic-init)
+
 ## Edit the topics.json to add topics
 ```
 [

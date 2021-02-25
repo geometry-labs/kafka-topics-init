@@ -35,4 +35,6 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: geometrylabs/kafka-topics-init:${{ steps.source.outputs.TAG }}
+          tags: |
+            geometrylabs/kafka-topics-init:latest
+            geometrylabs/kafka-topics-init:${{ steps.source.outputs.TAG }}
